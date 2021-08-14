@@ -1,0 +1,5 @@
+#back_image {
+  height: 4vh;
+  object-fit: cover;
+  transform: scale(0.8, 0.8);
+}

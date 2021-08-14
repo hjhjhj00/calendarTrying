@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+
+      {% block content %}
+      {% load static %}
+      <div id="main" class="container">
+        <div id="main_content">
+          <h1>
+            D<span>O</span><br />
+            A<span>NYTHING</span><br />
+            Y<span>OU</span><br />
+            WAN<span>T</span><br />
+          </h1>
+          <img
+            id="firework_1"
+            src="{% static 'mainpage/assets/Firework.png' %}"
+          />
+          <img
+            id="firework_2"
+            src="{% static 'mainpage/assets/Firework.png' %}"
+          />
+        </div>
+      </div>
+      <div id="section" class="container">
+        <div class="row">
+          <div class="shortcut col-12 col-md-4" id="shortcut_1">
+            <div class="position_box">
+              <h3>DAY ONE?</h3>
+              <a href="#"> 동아리 소개 보러가기 </a>
+            </div>
+          </div>
+
+          <div class="shortcut col-12 col-md-4" id="shortcut_2">
+            <div class="position_box">
+              <a href="{% url 'calendarpage:index' %}"> 동아리 방 예약 하러가기 </a>
+              <img src="{% static 'mainpage/assets/room_img.png' %}" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endblock content %}
+
